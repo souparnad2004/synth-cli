@@ -1,0 +1,28 @@
+{
+  "name": "synth-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "start": "node --env-file=.env dist/index.js"
+  },
+  "bin": {
+    "synth": "./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@11.16.0",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@google/genai": "^2.22.0",
+    "commander": "^15.0.0",
+    "openai": "^7.15.0",
+    "synth-cli": "link:"
+  }
+}
